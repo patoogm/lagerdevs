@@ -8,14 +8,16 @@ const propTypes = {
   ]).isRequired,
   width: PropTypes.number,
   height: PropTypes.number,
-  alt: PropTypes.string
+  alt: PropTypes.string,
+  title: PropTypes.string
 }
 
 const defaultProps = {
   src: undefined,
   width: undefined,
   height: undefined,
-  alt: undefined
+  alt: undefined,
+  title: undefined
 }
 
 const Image = ({
@@ -24,6 +26,7 @@ const Image = ({
   width,
   height,
   alt,
+  title,
   ...props
 }) => {
 
@@ -71,6 +74,7 @@ const Image = ({
       width={width}
       height={height}
       alt={alt}
+      title={title}
       onLoad={onLoad} />
   );
 }
