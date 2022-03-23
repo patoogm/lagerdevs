@@ -1,27 +1,28 @@
 // Buttons and Forms (shared settings)
 $button-form--height: 			48px;		// height of buttons and forms
 $button-form-sm--height: 		36px;		// height of buttons and forms (small)
-$button-form--border-width: 	1px;		// border width (if you wish not to display any border, just set colors to null instead of changing this value)
-$button-form--border-style: 	solid;		// border style
+$button-form--border-width: 	6px;		// border width (if you wish not to display any border, just set colors to null instead of changing this value)
+$button-form--border-style: 	double;		// border style
 $button-form--group-padding: 	12px;		// padding separating input from button in a form group (.form-group). Prefer null over 0
 
 // Buttons: text color
 $button--color: (
 	button-light: 		get-color(dark, 2),
 	button-dark: 		get-color(light, 1),
-	button-primary: 	get-color(light, 1),
+	button-primary: 	get-color(dark, 2),
+	button-primary-hover: 	get-color(primary, 1),
 	button-secondary:	get-color(light, 1),
-	button-disabled: 	get-color(dark, 3)
+	button-disabled: 	get-color(dark, 3),
 );
 
 // Buttons: background color
 $button--bg: (
 	button-light: 			get-color(light, 1),
 	button-light-hover: 	darken(get-color(light, 1), 5%),
-	button-dark: 			get-color(dark, 2),
+	button-dark: 			get-color(dark, 1),
 	button-dark-hover: 		lighten(get-color(dark, 2), 2%),
 	button-primary: 		get-color(primary, 1),
-	button-primary-hover: 	lighten(get-color(primary, 1), 2%),
+	button-primary-hover: 	get-color(dark, 1),
 	button-secondary: 		get-color(secondary, 1),
 	button-secondary-hover:	lighten(get-color(secondary, 1), 2%),
 	button-disabled: 		get-color(light, 3)
@@ -33,8 +34,8 @@ $button--border: (
 	button-light-hover: 	null,
 	button-dark: 			null,
 	button-dark-hover: 		null,
-	button-primary: 		null,
-	button-primary-hover: 	null,
+	button-primary: 		get-color(dark, 1),
+	button-primary-hover: 	get-color(light, 1),
 	button-secondary: 		null,
 	button-secondary-hover: null,
 	button-disabled: 		null
@@ -42,7 +43,7 @@ $button--border: (
 
 // Buttons: font size
 $button--size: (
-	button:	'eta'
+	button:	'zeta'
 );
 
 // Buttons: font weight
@@ -55,7 +56,7 @@ $button--padding-h: 			32px;		// button, left and right padding
 $button-sm--padding-h:			24px;		// button (small), left and right padding
 $button-w-form--padding-h:		24px;		// button, left and right padding in a form group (.form-group) - Overrides button default padding
 $button-sm-w-form--padding-h:	null;		// button (small), left and right padding in a form group (.form-group) - Overrides button default padding
-$button--radius: 				2px;		// button radius (never use null)
+$button--radius: 				10px;		// button radius (never use null)
 $button--transform: 			null;	    // button text-transform property (null is allowed)
 $button--max-size-mobile: 		280px;		// button max width on mobile (.button-wide-mobile)
 $button-group-padding: 			16px;		// padding between sibling buttons (nested into .button-group)

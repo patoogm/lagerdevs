@@ -10,6 +10,10 @@
 	margin-bottom: $cta-slogan--padding-v__mobile;
 }
 
+.text-dark{
+	color: get-color(dark, 1);
+}
+
 @include media( '>medium' ) {
 
 	.cta {

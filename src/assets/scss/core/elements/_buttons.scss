@@ -98,6 +98,7 @@
     &:hover {
         background-color: color-bg(button-primary-hover);
 		border-color: color-border(button-primary-hover);
+		color: color(button-primary-hover);
     }
 
 	&.is-loading {
