@@ -38,7 +38,7 @@ const Hero = ({
   }   
 
   const outerClasses = classNames(
-    'hero section center-content',
+    'hero section',
     topOuterDivider && 'has-top-divider',
     bottomOuterDivider && 'has-bottom-divider',
     hasBgColor && 'has-bg-color',
@@ -60,23 +60,28 @@ const Hero = ({
       <div className="container-sm">
         <div className={innerClasses}>
           <div className="hero-content">
-            <h1 className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="150">
-              Es tiempo de demostrarle al mundo de lo que sos capaz
+            <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="450">
+              Somos <span className="text-color-primary">Lager Devs</span>.
             </h1>
-            <h2 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="450">
-              Somos <span className="text-color-primary">Lager Devs</span>
-            </h2>
-            <div className="container-xs">
+            <h4 className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="150">
+              Es tiempo de demostrarle al mundo de lo que sos capaz.
+              <br/>
+              Trabajemos juntos para lograr tus objetivos!
+            </h4>
+            <div className="container-sm">
               <div className="reveal-from-bottom" data-reveal-delay="1000">
                 <ButtonGroup>
-                  <Button tag="a" color="primary" wideMobile href="#">
-                    Quiero saber mas!
+                  <Button tag="a" color="secondary" wideMobile href="#about">
+                    Quiero conocerlos
+                    </Button>
+                    <Button tag="a" color="primary" wideMobile href="#">
+                    Contactarme
                     </Button>
                 </ButtonGroup>
               </div>
             </div>
           </div>
-          <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
+          {/* <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
             <a
               data-video="https://player.vimeo.com/video/174002812"
               href="#0"
@@ -90,13 +95,13 @@ const Hero = ({
                 width={896}
                 height={504} />
             </a>
-          </div>
-          <Modal
+          </div> */}
+          {/* <Modal
             id="video-modal"
             show={videoModalActive}
             handleClose={closeModal}
             video="https://player.vimeo.com/video/174002812"
-            videoTag="iframe" />
+            videoTag="iframe" /> */}
         </div>
       </div>
     </section>
