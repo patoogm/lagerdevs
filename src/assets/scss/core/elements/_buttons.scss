@@ -117,6 +117,7 @@
     &:hover {
         background-color: color-bg(button-secondary-hover);
 		border-color: color-border(button-secondary-hover);
+		color: color(button-secondary-hover);
     }
 
 	&.is-loading {

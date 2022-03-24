@@ -71,10 +71,10 @@ const Hero = ({
             <div className="container-sm">
               <div className="reveal-from-bottom" data-reveal-delay="1000">
                 <ButtonGroup>
-                  <Button tag="a" color="primary" wideMobile href="#">
+                  <Button tag="a" color="secondary" wideMobile href="#about">
                     Quiero conocerlos
                     </Button>
-                    <Button tag="a" color="secundary" wideMobile href="#">
+                    <Button tag="a" color="primary" wideMobile href="#">
                     Contactarme
                     </Button>
                 </ButtonGroup>
