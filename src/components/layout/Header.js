@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { Link } from 'react-scroll';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { Link } from 'react-router-dom';
 import Logo from './partials/Logo';
 
 const propTypes = {
@@ -112,10 +112,33 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>Servicios</Link>
+                      <Link 
+                        activeClass="active"
+                        to="Nosotros"
+                        spy={true}
+                        smooth={true}
+                        hashSpy={true}
+                        offset={-70}
+                        duration={500}
+                        delay={10}
+                      >
+                      Nosotros
+                      </Link>
                     </li>
+                      <Link 
+                        activeClass="active"
+                        to="Servicios"
+                        spy={true}
+                        smooth={true}
+                        hashSpy={true}
+                        offset={0}
+                        duration={500}
+                        delay={10}
+                      >
+                      Servicios
+                      </Link>
                     <li>
-                      <Link to="#1" onClick={closeMenu}>Nosotros</Link>
+
                     </li>
                     <li>
                       <Link to="#2" onClick={closeMenu}>Clientes</Link>
@@ -126,7 +149,7 @@ const Header = ({
                       className="list-reset header-nav-right"
                     >
                       <li>
-                        <Link to="#0" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Contact</Link>
+                        <Link to="#0" className="button button-primary button-wide-mobile button-md" onClick={closeMenu}>Contact</Link>
                       </li>
                     </ul>}
                 </div>
