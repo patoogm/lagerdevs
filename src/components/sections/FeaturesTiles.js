@@ -54,7 +54,7 @@ const FeaturesTiles = ({
     <section
       {...props}
       className={outerClasses}
-      id="about"
+      id="Nosotros"
     >
       <div className="container">
         <div className={innerClasses}>
