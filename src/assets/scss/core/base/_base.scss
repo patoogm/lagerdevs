@@ -39,7 +39,7 @@ ol {
 }
 
 li {
-
+	cursor: pointer;
 	&:not(:last-child) {
 		margin-bottom: $spacing--shared-v * 0.5;
 	}

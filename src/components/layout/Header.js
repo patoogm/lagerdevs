@@ -108,7 +108,7 @@ const Header = ({
                 <div className="header-nav-inner">
                   <ul className={
                     classNames(
-                      'list-reset text-xs',
+                      'list-reset text-md',
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
@@ -125,9 +125,24 @@ const Header = ({
                       Nosotros
                       </Link>
                     </li>
+                    <li>
+                      <Link 
+                          activeClass="active"
+                          to="Servicios"
+                          spy={true}
+                          smooth={true}
+                          hashSpy={true}
+                          offset={0}
+                          duration={500}
+                          delay={10}
+                        >
+                        Servicios
+                        </Link>
+                    </li>
+                    <li>
                       <Link 
                         activeClass="active"
-                        to="Servicios"
+                        to="Clientes"
                         spy={true}
                         smooth={true}
                         hashSpy={true}
@@ -135,13 +150,8 @@ const Header = ({
                         duration={500}
                         delay={10}
                       >
-                      Servicios
+                        Clientes
                       </Link>
-                    <li>
-
-                    </li>
-                    <li>
-                      <Link to="#2" onClick={closeMenu}>Clientes</Link>
                     </li>
                   </ul>
                   {!hideSignin &&
@@ -149,7 +159,7 @@ const Header = ({
                       className="list-reset header-nav-right"
                     >
                       <li>
-                        <Link to="#0" className="button button-primary button-wide-mobile button-md" onClick={closeMenu}>Contact</Link>
+                        <Link to="#0" className="button button-primary button-wide-mobile button-md" onClick={closeMenu}>Contacto</Link>
                       </li>
                     </ul>}
                 </div>
