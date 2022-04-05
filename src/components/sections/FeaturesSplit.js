@@ -68,7 +68,7 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
 
-                <h3 className="mt-0 mb-12 text-color-primary">
+                <h3 className="mt-0 text-color-primary">
                   Desarrollo Web
                   </h3>
                 <p className="m-0">
@@ -85,15 +85,15 @@ const FeaturesSplit = ({
                 <Image
                   src={require('./../../assets/images/DW.png')}
                   alt="Features split 01"
-                  width={528}
-                  height={396} />
+                  width={1150}
+                  height={1150} />
               </div>
             </div>
 
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
 
-                <h3 className="mt-0 mb-12 text-color-primary">
+                <h3 className="mt-0 text-color-primary">
                   Diseño Gráfico
                   </h3>
                 <p className="m-0">
@@ -110,15 +110,15 @@ const FeaturesSplit = ({
                 <Image
                   src={require('./../../assets/images/DG.png')}
                   alt="Features split 02"
-                  width={528}
-                  height={396} />
+                  width={1147}
+                  height={1147} />
               </div>
             </div>
 
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
 
-                <h3 className="mt-0 mb-12 text-color-primary">
+                <h3 className="mt-0 text-color-primary">
                   Community Manager
                   </h3>
                 <p className="m-0">
@@ -135,8 +135,8 @@ const FeaturesSplit = ({
                 <Image
                   src={require('./../../assets/images/CM.png')}
                   alt="Features split 03"
-                  width={528}
-                  height={396} />
+                  width={1200}
+                  height={800} />
               </div>
             </div>
 
