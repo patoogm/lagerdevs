@@ -1,8 +1,8 @@
 // Buttons and Forms (shared settings)
 $button-form--height: 			48px;		// height of buttons and forms
 $button-form-sm--height: 		36px;		// height of buttons and forms (small)
-$button-form--border-width: 	6px;		// border width (if you wish not to display any border, just set colors to null instead of changing this value)
-$button-form--border-style: 	double;		// border style
+$button-form--border-width: 	2px;		// border width (if you wish not to display any border, just set colors to null instead of changing this value)
+$button-form--border-style: 	solid;		// border style
 $button-form--group-padding: 	12px;		// padding separating input from button in a form group (.form-group). Prefer null over 0
 
 // Buttons: text color
@@ -35,8 +35,8 @@ $button--border: (
 	button-light-hover: 	null,
 	button-dark: 			null,
 	button-dark-hover: 		null,
-	button-primary: 		get-color(dark, 1),
-	button-primary-hover: 	get-color(light, 1),
+	button-primary: 		get-color(primary, 1),
+	button-primary-hover: 	get-color(primary, 1),
 	button-secondary: 		get-color(light, 1),
 	button-secondary-hover: get-color(dark, 1),
 	button-disabled: 		null
